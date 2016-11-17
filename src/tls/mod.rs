@@ -9,6 +9,8 @@ use std::fmt;
 pub mod openssl;
 #[cfg(feature = "with-security-framework")]
 pub mod security_framework;
+#[cfg(feature = "with-schannel")]
+pub mod schannel;
 #[cfg(feature = "with-native-tls")]
 pub mod native_tls;
 
